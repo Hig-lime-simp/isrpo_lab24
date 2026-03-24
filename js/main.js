@@ -1,3 +1,5 @@
+import { greet, add, PI } from "./utils.js";
+import * as math from "./math.js"
 // // console.log("\n=== Деструктуризация массивов ===");
 
 // const colors = ["red", "green", "blue"];
@@ -123,18 +125,33 @@
 // console.log("Второе число:", second);
 // console.log("Остальные числа:", rest);
 
-const arr1 = [1,2,3,4,5]
-const arr2 = [6,7,8,9,10]
+// const arr1 = [1,2,3,4,5]
+// const arr2 = [6,7,8,9,10]
 
-const arr3 = [...arr1, ...arr2]
+// const arr3 = [...arr1, ...arr2]
 
-function findMax(...arr){
-         return arr.reduce((max,num) => {
-            if (max < num){
-            return num
-        }
-        return max
-    });
-}
+// function findMax(...arr){
+//          return arr.reduce((max,num) => {
+//             if (max < num){
+//             return num
+//         }
+//         return max
+//     });
+// }
 
-console.log(findMax(...arr3))
+// console.log(findMax(...arr3))
+
+// console.log(greet("Алексей"));
+// console.log("5 + 3 =", add(5, 3));
+// console.log("Значение PI:", PI);
+
+// import { multiply as умножить } from "./utils.js";
+// console.log("4 * 7 =", умножить(4, 7));
+
+// import * as Utils from "./utils.js";
+// console.log(Utils.greet("Мария"));
+// console.log("Умножение:", Utils.multiply(3, 9));
+
+console.log(math.square(4))
+console.log(math.cube(3))
+console.log(math.E);
